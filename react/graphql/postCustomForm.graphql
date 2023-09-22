@@ -1,0 +1,14 @@
+mutation createDocument(
+  $acronym: String!, 
+  $document: DocumentInput , 
+  $account: String, 
+  $schema: String){
+  createDocument(
+    acronym:$acronym, 
+    document:$document, 
+    account: $account, 
+    schema: $schema) @context(provider: "vtex.store-graphql") {
+    id
+    documentId
+  } 
+} 

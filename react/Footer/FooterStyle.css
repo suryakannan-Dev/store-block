@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.bg {
+    margin-top: 10px;
+    width: 33.3%;
+}
+
+ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+li, h4 {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.c2r2>ul>li>a>svg {
+    font-size: 20px;
+}
+
+p, button {
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+
+/* footer-col-1 */
+.c1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 98%;
+    margin-bottom: 10px;
+    margin-left: 2%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.ml {
+    margin-left: 5%;
+    font-size: 12px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+.m {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+
+.w50 {
+    width: 50%;
+}
+
+/* footer-col-2 */
+.c2 {
+    display: flex;
+    width: 98%;
+    margin-left: 15px;
+}
+
+.c2r1, .c2r2 {
+    width: 50%;
+}
+
+.c2r1 input {
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    outline: none;
+    width: 300px;
+}
+
+.c2r1 input::placeholder {
+    color: black;
+}
+
+.c2r2 ul {
+    margin-top: 25px;
+}
+
+.c2r2 li {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -22px;
+}
+
+.c2 p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.c2r2 li a {
+    padding: .8rem;
+    font-size: 15px;
+}
+
+/* responsive layout */
+@media screen and (max-width: 1025px) {
+    /* footer-col-1 */
+    .c1 {
+        flex-direction: column;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    .c1r {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bg {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    /* footer-col-2 */
+    .c2 {
+        flex-direction: column;
+    }
+
+    .c2 p {
+        font-size: 20px;
+    }
+
+    .c2r1, .c2r2 {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .c2r1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c2r1 input {
+        width: 80%;
+    }
+
+    .c2r2 {
+        justify-content: start;
+        margin-left: -10px;
+    }
+
+    .c2r2 li {
+        justify-content: flex-start;
+    }
+
+    .c2r2 p {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .c2r2 li a {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 300px) {
+    /* footer-col-2 */
+    .c2r1>ul>li>svg {
+        visibility: hidden;
+    }
+
+    .c2r2 li a {
+        font-weight: bold;
+        font-size: 8px;
+    }
+}

@@ -1,6 +1,10 @@
 {
   "extends": "@vtex/tsconfig",
   "compilerOptions": {
+    "lib": [
+      "dom", 
+      "es2017"
+      ],
     "noEmitOnError": false,
     "typeRoots": [
       "node_modules/@types"
