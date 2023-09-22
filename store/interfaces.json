@@ -1,5 +1,26 @@
 {
   "countdown": {
     "component": "Countdown"
+  },
+  "footer-Desktop":{
+    "component": "CustomFooterDesktop"
+  },
+  "footer-Mobile":{
+    "component": "CustomFooterMobile"
+  },
+  "menudesk": {
+    "component": "MegaMenuDesk"
+  },
+  "menumob": {
+    "component": "MegaMenuMob"
+  },
+  "custom-table" : {
+    "component": "customTable"
+  },
+  "contact-form" : {
+    "component": "ContactForm"
+  },
+  "custom-service" : {
+    "component": "CustomService"  
   }
-}
+} 
